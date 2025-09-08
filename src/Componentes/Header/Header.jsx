@@ -1,8 +1,11 @@
+import '../Estilo_Global.css'
+import './Header.css'
+
 function Header () {
     return(
 
         <>
-            <div className="">
+            <div className="" id="Main">
                 <h1>teste</h1>
             </div>
         </>

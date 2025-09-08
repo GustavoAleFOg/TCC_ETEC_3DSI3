@@ -1,7 +1,10 @@
 import { useState } from 'react'
-import Header from './Componentes/Header/Header'
-
 import './App.css'
+
+import Header from './Componentes/Header/Header';
+import Nav from './Componentes/Nav/Nav';
+import Main from './Componentes/Main';
+import Footer from './Componentes/Footer';
 
 function App() {
   
@@ -9,8 +12,9 @@ function App() {
     <>
     <div className=''>
         <Header />
-        
-
+        <Nav />
+        <Main />
+        <Footer />
     </div>
     </>
   )
