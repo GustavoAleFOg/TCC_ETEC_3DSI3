@@ -1,0 +1,33 @@
+.cabecalho-principal {
+  background-color: var(--cor-fundo);
+  border-bottom: 2px solid var(--cor-borda);
+}
+
+/* Estilo para o logo do site */
+.cabecalho-principal .logo-site img {
+  height: 50px;
+  width: auto;
+}
+
+/* Estilo para os links do menu */
+.cabecalho-principal .nav-link {
+  color: var(--cor-texto);
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.cabecalho-principal .nav-link:hover {
+  color: var(--cor-destaque);
+}
+
+/* Estiliza o botão de tema */
+.cabecalho-principal .botao-tema {
+  border: 2px solid var(--cor-borda);
+  border-radius: 50%; /* Deixa o botão redondo */
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

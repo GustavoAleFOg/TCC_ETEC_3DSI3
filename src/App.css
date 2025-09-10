@@ -1,4 +1,48 @@
-Body {
-    background-color: #000000;
-    text-align: center;
+/* Define as cores para o tema claro (light) */
+:root {
+  --cor-fundo: #FFFFFF;      /* Branco */
+  --cor-texto: #000000;      /* Preto */
+  --cor-destaque: #F91880;   /* Rosa vibrante */
+  --cor-secundaria: #FFD700; /* Dourado/Amarelo */
+  --cor-borda: #000000;      /* Borda preta */
+}
+
+/*'dark-theme'.
+  :root.dark-theme {
+    --cor-fundo: #000000;
+    --cor-texto: #FFFFFF;
+    --cor-destaque: #F91880;
+    --cor-secundaria: #FFD700;
+    --cor-borda: #FFFFFF;
+  }
+*/
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: 'Courier New', Courier, monospace; /* Uma fonte com estilo mais "cru" */
+}
+
+/* Estilo Neobrutalista para botões */
+.btn-neobrutalista {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  border: 2px solid var(--cor-borda);
+  border-radius: 0; /* Bordas retas */
+  font-weight: bold;
+  padding: 10px 20px;
+  box-shadow: 4px 4px 0px var(--cor-borda); /* Sombra dura característica */
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-neobrutalista:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-texto);
+  box-shadow: 2px 2px 0px var(--cor-borda);
+  transform: translate(2px, 2px);
+}
+
+.btn-neobrutalista:active {
+  box-shadow: none !important;
+  transform: translate(4px, 4px) !important;
 }

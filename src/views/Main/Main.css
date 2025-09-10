@@ -1,0 +1,17 @@
+.conteudo-principal {
+  /* Garante que o conteúdo ocupe o espaço necessário */
+  min-height: 80vh; 
+}
+
+/* Um container para padronizar o espaçamento das seções */
+.secao-container {
+  padding: 40px 20px;
+  margin: 20px;
+  border: 2px solid var(--cor-borda);
+  text-align: center; /* Centraliza o texto do placeholder */
+  background-color: var(--cor-fundo);
+}
+
+.secao-container h2 {
+  color: var(--cor-destaque);
+}

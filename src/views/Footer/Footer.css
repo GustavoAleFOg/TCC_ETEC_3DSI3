@@ -1,0 +1,36 @@
+.rodape-principal {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  padding: 40px 0;
+  border-top: 2px solid var(--cor-borda);
+  margin-top: 40px; /* Espaço para separar do conteúdo principal */
+}
+
+.coluna-rodape {
+  /* Em telas pequenas, centraliza o texto */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Em telas maiores, alinha o texto à esquerda */
+@media (min-width: 768px) {
+  .coluna-rodape {
+    text-align: left;
+  }
+}
+
+.coluna-rodape h5 {
+  color: var(--cor-destaque);
+  font-weight: bold;
+}
+
+.coluna-rodape a {
+  display: block; /* Faz cada link ocupar uma linha */
+  color: var(--cor-texto);
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.coluna-rodape a:hover {
+  text-decoration: underline;
+}
