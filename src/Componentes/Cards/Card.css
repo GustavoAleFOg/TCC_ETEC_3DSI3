@@ -1,0 +1,15 @@
+#card {
+    background-color: #DC143C;
+    border: solid 1px #fff;
+    color: #fff;
+    width: 18rem;
+    height: 19rem;
+    box-shadow:  5px 5px #000000;
+    margin-top: 10px;
+}
+
+ .CardContorno {
+    border: solid 2px #000;
+    margin: 5px;
+}
+
