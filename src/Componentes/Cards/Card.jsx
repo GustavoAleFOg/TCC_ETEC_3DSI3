@@ -1,6 +1,9 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './Card.css'
+import './Cards_globais.css'
+import MinhaImagem from '../../assets/R.jpg';
+
 
 function BasicExample() {
   return (
@@ -11,14 +14,32 @@ function BasicExample() {
                 
             <div className='' id="card" >
                 <Card class="CardContorno" >
-                    <Card.Img  variant="top" src="../../assets/R.jpg" alt="foto eventos" />
+                    <Card.Img  class="card-imagem" variant="top" src={MinhaImagem} alt="foto eventos" />
                         <Card.Body >
+                            <Card.Title class="titulo">Imagem sobre caos</Card.Title>
 
-                            <Card.Title class="titulo">Card de eventos</Card.Title>
+                            <div class="row">
+                                <div class="col-4">
+                                    <Card.Text class="Texto">
+                                            Descrição 
+                                    </Card.Text>
+
+                                </div>
+                                <div class="col-4">
                                 <Card.Text class="Texto">
-                                    Texto exemploTexto 
-                                </Card.Text>
+                                        Descrição 
+                                    </Card.Text>
+                                </div>
+                                <div class="col-4">
+                                <Card.Text class="Texto">
+                                        Descrição 
+                                    </Card.Text>
+                                </div>
                                 <Button variant="primary">botão do card</Button>
+                            </div>
+                              
+                                
+                                
                         </Card.Body>
                  </Card>
             </div>
